@@ -34,13 +34,14 @@ const App = () => {
   console.log('avatar', avatar);
 
   return (
-    <div className='App' style={{ textAlign: 'center' }}>
+    <div className='App' style={{ textAlign: 'center', height: '100%' }}>
       <nav
         style={{
-          width: '100%',
           backgroundColor: '#282c34',
           padding: '20px',
           textAlign: 'left',
+          borderTopLeftRadius: 10,
+          borderTopRightRadius: 10,
         }}
       >
         <Link
@@ -55,18 +56,53 @@ const App = () => {
         >
           Portfolio
         </Link>
+        <button disabled={isAuth} onClick={googleSignIn}>
+          Sign in
+        </button>
+        <img src={avatar} alt='Avatar' />
+        <button disabled={!isAuth} onClick={signOut}>
+          Sign out
+        </button>
       </nav>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='portfolio' element={<Portfolio />} />
-      </Routes>
-      <button disabled={isAuth} onClick={googleSignIn}>
-        Sign in
-      </button>
-      <img src={avatar} alt='Avatar' />
-      <button disabled={!isAuth} onClick={signOut}>
-        Sign out
-      </button>
+      <div
+        style={{
+          width: '100%',
+          height: 'calc(100% - 113px)',
+          display: 'inline-flex',
+        }}
+      >
+        <div
+          style={{
+            backgroundColor: 'white',
+            height: '100%',
+            width: '23%',
+            borderBottomLeftRadius: 10,
+          }}
+        >
+          Mines
+        </div>
+        <div
+          style={{
+            backgroundColor: 'white',
+            height: '100%',
+            width: '100%',
+            marginLeft: '10px',
+            marginRight: '10px',
+          }}
+        >
+          Island
+        </div>
+        <div
+          style={{
+            backgroundColor: 'white',
+            height: '100%',
+            width: '23%',
+            borderBottomRightRadius: 10,
+          }}
+        >
+          Upgrades
+        </div>
+      </div>
     </div>
   );
 };
