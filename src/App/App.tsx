@@ -5,7 +5,7 @@ import { signInWithPopup } from 'firebase/auth';
 
 import Portfolio from '../pages/Portfolio';
 import Home from '../pages/Home';
-import { screwLineStyles, screwStyles } from './styles';
+import Screw from '../components/Screw';
 
 const App = () => {
   const [isAuth, setIsAuth] = useState(
@@ -54,6 +54,7 @@ const App = () => {
           boxSizing: 'border-box',
           boxShadow: '0px 5px 15px 0px #282c34',
           position: 'relative',
+          zIndex: 1,
         }}
       >
         <div
@@ -67,9 +68,7 @@ const App = () => {
             alignItems: 'center',
           }}
         >
-          <div style={screwStyles()}>
-            <div style={screwLineStyles()} />
-          </div>
+          <Screw />
           <Link
             to='/'
             style={{ color: 'white', textDecoration: 'none', margin: '0 8px' }}
@@ -82,13 +81,10 @@ const App = () => {
           >
             Portfolio
           </Link>
-          <div style={screwStyles(true)}>
-            <div style={screwLineStyles()} />
-          </div>
+          <Screw last />
         </div>
         <div
           style={{
-            // backgroundColor: 'blue',
             height: '100%',
             width: '60%',
             margin: '0 10px',
@@ -98,16 +94,11 @@ const App = () => {
             boxSizing: 'border-box',
           }}
         >
-          <div style={screwStyles()}>
-            <div style={screwLineStyles()} />
-          </div>
-          <div style={screwStyles(true)}>
-            <div style={screwLineStyles()} />
-          </div>
+          <Screw />
+          <Screw last />
         </div>
         <div
           style={{
-            // backgroundColor: 'red',
             height: '100%',
             width: '20%',
             alignItems: 'center',
@@ -117,9 +108,7 @@ const App = () => {
             boxSizing: 'border-box',
           }}
         >
-          <div style={screwStyles()}>
-            <div style={screwLineStyles()} />
-          </div>
+          <Screw />
           <button disabled={isAuth} onClick={googleSignIn}>
             Sign in
           </button>
@@ -127,70 +116,10 @@ const App = () => {
           <button disabled={!isAuth} onClick={signOut}>
             Sign out
           </button>
-          <div style={screwStyles(true)}>
-            <div style={screwLineStyles()} />
-          </div>
+          <Screw last />
         </div>
       </nav>
-      <div
-        style={{
-          width: '100%',
-          height: 'calc(100% - 113px)',
-          display: 'inline-flex',
-        }}
-      >
-        <div
-          style={{
-            backgroundColor: '#e7e7e7',
-            height: '100%',
-            width: '20%',
-            borderBottomLeftRadius: 10,
-          }}
-        >
-          {/* <div
-            style={{
-              width: 20,
-              height: 20,
-              backgroundColor: 'red',
-              position: 'absolute',
-              left: 20,
-              top: 20,
-            }}
-          />
-          <div
-            style={{
-              width: 20,
-              height: 20,
-              backgroundColor: 'red',
-              position: 'absolute',
-              left: 'calc(25% - 20px)',
-              top: 20,
-            }}
-          /> */}
-          Mines
-        </div>
-        <div
-          style={{
-            backgroundColor: '#e7e7e7',
-            height: '100%',
-            width: '60%',
-            marginLeft: '10px',
-            marginRight: '10px',
-          }}
-        >
-          Island
-        </div>
-        <div
-          style={{
-            backgroundColor: '#e7e7e7',
-            height: '100%',
-            width: '20%',
-            borderBottomRightRadius: 10,
-          }}
-        >
-          Upgrades
-        </div>
-      </div>
+      <Home />
     </div>
   );
 };
