@@ -4,7 +4,7 @@ import { iconsContainer } from './styles';
 export const Stones = () => (
   <div style={iconsContainer()}>
     <StoneIcon
-      width='50%'
+      width="50%"
       style={{
         position: 'absolute',
         bottom: 0,
@@ -12,6 +12,6 @@ export const Stones = () => (
         filter: 'drop-shadow(-4px -2px 4px rgb(0 0 0 / 0.4))',
       }}
     />
-    <StoneIcon width='70%' style={{ marginRight: 10 }} />
+    <StoneIcon width="70%" style={{ marginRight: 10 }} />
   </div>
 );

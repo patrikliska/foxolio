@@ -36,7 +36,7 @@ const App = () => {
 
   return (
     <div
-      className='App'
+      className="App"
       style={{ position: 'relative', textAlign: 'center', height: '100%' }}
     >
       <nav
@@ -70,13 +70,13 @@ const App = () => {
         >
           <Screw />
           <Link
-            to='/'
+            to="/"
             style={{ color: 'white', textDecoration: 'none', margin: '0 8px' }}
           >
             Home
           </Link>
           <Link
-            to='/portfolio'
+            to="/portfolio"
             style={{ color: 'white', textDecoration: 'none', margin: '0 8px' }}
           >
             Portfolio
@@ -112,7 +112,7 @@ const App = () => {
           <button disabled={isAuth} onClick={googleSignIn}>
             Sign in
           </button>
-          <img src={avatar} alt='Avatar' />
+          <img src={avatar} alt="Avatar" />
           <button disabled={!isAuth} onClick={signOut}>
             Sign out
           </button>

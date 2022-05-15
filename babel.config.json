@@ -1,0 +1,4 @@
+{
+  "babelrcRoots": ["*"],
+  "plugins": ["react-require", "@babel/plugin-transform-modules-commonjs"]
+}
