@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/foxolio-app/src",
+  "sourceRoot": "apps/reclicker/src",
   "projectType": "application",
   "tags": []
 }

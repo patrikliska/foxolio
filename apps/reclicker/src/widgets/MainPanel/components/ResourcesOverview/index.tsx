@@ -12,15 +12,15 @@ const ResourcesOverview = () => {
   return (
     <div style={resourcesOverviewContainerStyles(isCollapsed)}>
       <div
-        css={css({
-          backgroundColor: 'blue',
-          '&:before': {
-            content: "''",
-            width: 50,
-            height: 50,
-            backgroundColor: 'green',
-          },
-        })}
+        // css={css({
+        //   backgroundColor: 'blue',
+        //   '&:before': {
+        //     content: "''",
+        //     width: 50,
+        //     height: 50,
+        //     backgroundColor: 'green',
+        //   },
+        // })}
         style={rowsContainerStyles()}
         onClick={() => setIsCollapsed(!isCollapsed)}
       >

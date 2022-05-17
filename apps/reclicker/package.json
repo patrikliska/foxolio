@@ -1,5 +1,5 @@
 {
-  "name": "foxolio-app",
+  "name": "reclicker",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -25,7 +25,7 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "BUILD_PATH=../../dist/apps/foxolio-app craco build",
+    "build": "BUILD_PATH=../../dist/apps/reclicker craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
     "serve": "npm start"
