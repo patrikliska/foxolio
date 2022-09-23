@@ -10,7 +10,7 @@ function TreeIcon(props: React.SVGProps<SVGSVGElement>) {
       x='0px'
       y='0px'
       viewBox='0 0 512 512'
-      enable-background='new 0 0 512 512;'
+      enableBackground='new 0 0 512 512;'
       xmlSpace='preserve'
       {...props}
     >

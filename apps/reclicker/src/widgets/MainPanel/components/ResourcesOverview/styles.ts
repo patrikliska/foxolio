@@ -12,6 +12,7 @@ export const resourcesOverviewContainerStyles = (
   height: isCollapsed ? 30 : 250,
   boxShadow: 'rgb(40 44 52) 0px 0px 25px -10px',
   borderRadius: '0 0 5px 5px',
+  transition: '1s all',
 });
 
 export const rowsContainerStyles = (): CSSProperties => ({

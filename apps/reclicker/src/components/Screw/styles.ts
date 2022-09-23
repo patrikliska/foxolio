@@ -3,11 +3,10 @@ import { CSSProperties } from 'react';
 export const screwStyles = (last?: boolean): CSSProperties => ({
   backgroundColor: '#404040',
   borderRadius: '50%',
-  height: 20,
-  marginLeft: last ? 'auto' : 'unset',
-  marginRight: last ? 'unset' : 10,
+  minHeight: 20,
+  margin: 10,
   position: 'relative',
-  width: 20,
+  minWidth: 20,
 });
 
 export const screwLineStyles = (last?: boolean): CSSProperties => {
