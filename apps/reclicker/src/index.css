@@ -8,8 +8,8 @@ body {
   background: rgb(45, 56, 253);
   background: linear-gradient(
     0deg,
-    rgba(45, 56, 253, 1) 0%,
-    rgba(124, 131, 255, 1) 100%
+    rgba(45, 56, 253, 0.8) 0%,
+    rgba(124, 131, 255, 0.8) 100%
   );
   padding: 25px;
   height: 100%;

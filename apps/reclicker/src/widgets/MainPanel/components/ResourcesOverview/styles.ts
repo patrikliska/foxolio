@@ -23,8 +23,6 @@ export const rowsContainerStyles = (): CSSProperties => ({
   margin: 5,
   opacity: '0.1',
   cursor: 'pointer',
-  // transitionProperty: 'height',
-  // transitionDuration: '500ms',
 });
 
 export const rowStyles = (): CSSProperties => ({
