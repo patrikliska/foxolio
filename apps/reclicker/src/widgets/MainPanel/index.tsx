@@ -1,42 +1,20 @@
-import ResourcesOverview from './components/ResourcesOverview';
+import { Box } from '@mui/material';
 
-const islandImage = require('../../assets/island-w-water.png');
+import Island from './components/Island';
+
+import Resources from './components/Resources';
+import { containerSx, townIslandOverviewSx } from './styles';
 
 const MainPanel = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        position: 'relative',
-        justifyContent: 'center',
-        height: '100%',
-      }}
-    >
-      <ResourcesOverview />
-      <div
-        css={{
-          width: '100%',
-          justifyContent: 'center',
-          alignItems: 'end',
-          display: 'flex',
-          padding: 50,
-        }}
-      >
-        <div css={{ display: 'flex', position: 'relative' }}>
-          <img src={islandImage} alt="island.png" css={{ width: '100%' }} />
-          <div
-            css={{
-              position: 'absolute',
-              display: 'grid',
-              gridTemplateColumns: 'repeat(20, 1fr)',
-              gridTemplateRows: 'repeat(10, 1fr)',
-              height: '100%',
-              width: '100%',
-            }}
-          ></div>
-        </div>
-      </div>
-    </div>
+    <Box sx={containerSx}>
+      <Resources />
+      <Box sx={townIslandOverviewSx}>
+        <Box sx={{ display: 'flex', position: 'relative' }}>
+          <Island />
+        </Box>
+      </Box>
+    </Box>
   );
 };
 

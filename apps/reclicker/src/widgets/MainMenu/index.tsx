@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { signInWithPopup } from 'firebase/auth';
 
 import { auth, provider } from '../../utils/firebase';
-import Screw from '../../components/Screw';
 import { StyledMainMenuContainer } from './styles';
 import MenuContainer from './components/MenuContainer';
 

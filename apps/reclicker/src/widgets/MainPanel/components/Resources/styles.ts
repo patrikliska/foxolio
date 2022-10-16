@@ -1,6 +1,6 @@
 import { CSSProperties } from 'react';
 
-export const resourcesOverviewContainerStyles = (
+export const resourcesContainerStyles = (
   isCollapsed: boolean
 ): CSSProperties => ({
   position: 'absolute',

@@ -1,4 +1,3 @@
-
 import Home from '../pages/Home';
 import MainMenu from '../widgets/MainMenu';
 
